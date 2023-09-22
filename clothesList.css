@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header img{
+    width: 180px;
+    height: 100px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-family: 'inter';
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
+.nav li a:hover,
+.nav li a.active{
+    color: #ee4d2c;
+}
+
+.nav li a.active::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background: #ee4d2c;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -4px;
+    left: 20px;
+}
+
+.responsive{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+/* Content */
+.content{
+    margin: 5% 0;
+    padding: 0 12%;
+}
+
+.content h1{
+    font-family: 'inter';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.rowCard{
+    margin-bottom: 4.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.colCard h2{
+    font-family: 'inter';
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.colCard p{
+    font-family: 'inter';
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.imgCard{
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+
+.imgCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.top-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.top-img:hover{
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button{
+    font-family: 'inter';
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 20px auto;
+    background: #000000;
+    border: none;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    background: #f4f4f4;
+    padding: 10px 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2% 6%;
+}
+
+footer h4{
+    font-family: 'inter';
+    font-weight: bold;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+footer h3{
+    font-family: 'inter';
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 15px;
+    
+}
+
+.row p{
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    font-family: 'inter';
+    font-weight: lighter;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'inter';
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    margin-bottom: 8px;
+}
+
+.subs a{
+    font-family: 'inter';
+    font-weight: bold;
+    color: #000000;
+}
+
+.subs a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.15s;
+}
+
+.subs a:hover::after{
+    width: 100%;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.copyright p{
+    font-size: 14px;
+    font-family: 'inter';
+    font-weight: lighter;
+}
+
+.icon img{
+    width: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav.active{
+        right: 0px;
+    }
+
+    .nav li{
+        margin-bottom: 25px;
+    }
+
+    .responsive{
+        display: flex;
+        align-items: center;
+    }
+
+    .responsive i{
+        color: #000000;
+        font-size: 24px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close{
+        position: absolute;
+        display: initial;
+        top: 30px;
+        left: 30px;
+        color: #000;
+        visibility: visible;
+        font-size: 24px;
+    }
+}

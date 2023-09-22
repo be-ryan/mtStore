@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3515e30614.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="subscribePage.css">
+    <title>Subscribe | M&T</title>
+    <link rel="shortcut icon" href="assets/MTLogo.png">
+
+</head>
+<body>
+    <section class="header">
+        <a href="homePage.html"><img src="assets/mtLogo.png" class="logo" alt=""></a>
+        <div>
+            <ul class="nav" id="nav_bar">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="clothesPage.html">Clothes</a></li>
+                <li><a href="aboutUsPage.html">About Us</a></li>
+                <li><a href="locationsPage.html">Locations</a></li>
+                <li><a class="active" href="subscribePage.html">Subscribe</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div class ="responsive">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- content -->
+    <section class="content">
+        <div class="holder">
+            <h1>Be a Subscriber!</h1>
+            <p>Get latest information including new
+                arrivals, events, promotions and many
+                more by subscribing. <br>
+                 Start subscribing by filling the form below.</p>
+            
+            
+            <div class="main">
+                <div class="container">
+                    <div class="title">
+                        <h2>
+                            Registration
+                        </h2>
+                    </div>
+                    <form class="form" id="form">
+                        <div class="form-control">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" id="name">
+                            <div class="correct">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="false">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label >Email</label>
+                            <input type="text" placeholder="Your Email" id="email">
+                            <div class="correct">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="false">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label >Phone Number</label>
+                            <input type="text" placeholder="Your Phone Number" id="phoneNum">
+                            <div class="correct">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="false">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label >Country</label>
+                            <input type="text" placeholder="Your Country" id="country">
+                            <div class="correct">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="false">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <small id="msg">Error message</small>
+                        </div>
+                        <div class="terms" id="lol">
+                            <small class="msg">You need to agree with terms and conditions</small>
+                            <label class="checkbox" for="check">
+                                <input class="checkbox_input" type="checkbox" name="checkname" id="check">
+                                <div class="checkbox_box"></div>
+                                Agree with terms and conditions
+                            </label>                                
+                        </div>
+                        <button id="openPopUp">Submit</button>
+    
+                        <div class="pop-up" id="pop_up">
+                            <div class="confirmation">
+                                <h2>Confirm M&T Subscription?</h2>
+                                <div class="buttonPop">
+                                    <button id="confirm">
+                                        Yes, I'm sure
+                                    </button>
+                                    <button id="noConfirm">
+                                        No
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>              
+    </section>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Information</h3>
+                <a href="aboutUsPage.html">About Us</a>
+                <a href="locationsPage.html">Locations</a>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="faceboook"></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"><img src="assets/twitter.png" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contact Us</h3>
+                <p>Costumer Service</p>
+                <p>(001) 83335160280</p>
+                <p>0823-1111-1110 
+                    (WhatsApp)</p>
+            </div>
+            <div class="col">
+                <h3>Help</h3>
+                <a href="#">FAQ</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="col">
+                <h3>E-News</h3>
+                <p>Get latest information including new<br> arrivals,
+                    events, promotions and many<br> more by signing up.
+                </p>
+                <div class="subs">
+                    <a href="subscribePage.html">SUBSCRIBE NOW</a>
+                </div>
+            </div>     
+        </div>    
+        <div class="copyright">
+            <p>© 1980 - 2022  M&T - All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="subsPage.js"></script>
+<script src="nav.js"></script>
+</html>
